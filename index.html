@@ -4,74 +4,123 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Planos de Internet</title>
-    <link rel="stylesheet" href="bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/componentes.css" />
   </head>
   <body>
-    <header>
+    <header class="layout-cabecalho layout-cabecalho--fixo">
       <div class="container">
-        <img
-          src="png-transparent-www-icon-removebg-preview.png"
-          alt="Internet"
-          width="81.25rem"
-        />
+        <nav class="navegacao">
+          <img src="./img/png-transparent-www-icon-removebg-preview.png" alt="Internet" width="80px" height="80px"/>
+          <div class="navegacao__menu">
+            <button class="botao--chaveador js-botao--chaveador"></button>
+
+            <ul class="menu js-menu">
+              <li class="menu__item"><a href="#">Como Funciona</a></li>
+              <li class="menu__item"><a href="#">Plano e Preços</a></li>
+              <li class="menu__item"><a href="#">Contato</a></li>
+              <li class="menu__item"><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
-    <div id="planos">
+    <section class="layout-principal">
+      <div class="container">
+        <div class="principal">
+          <h1 class="principal__titulo">
+            A melhor internet banda larga da região serrana do estado do Rio de
+            Janeiro
+          </h1>
+          <p class="principal__subtitulo">Pacote que cabem no seu bolso</p>
+        </div>
+        <div class="principal__acao">
+          <a href="#planos" class="botao">Conheça os nossos pacotes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout-depoimento">
+      <div class="container">
+        <div class="depoimento">
+          <blockquote>
+            Gostei muito do plano de internet da empresa. Não tive problemas de
+            queda de conexão. Estou satisfeito com o serviço prestado.
+          </blockquote>
+          <div class="depoimento__autor">
+            <img src="./img/Imagem do WhatsApp de 2025-01-12 à(s) 21.21.48_a056af29.jpg" alt="depoimento" width="80px" height="80px"/>
+            <p>Donquixote Doflamingo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="planos" class="layout-planos">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <article>
-              <h2>Plano Básico</h2>
-              <div>R$89,90/mês</div>
-              <ul>
+            <article class="plano plano--mais--vendido">
+              <h2 class="plano__cabecalho">Plano Básico</h2>
+              <div class="plano__preco">R$89,90/mês</div>
+              <ul class="plano__caracteristicas">
                 <li>Até 10 <strong>usuários</strong></li>
                 <li>10GB de <strong> armazenamento</strong></li>
                 <li>Instalação Grátis</li>
                 <li>Fibra Ótica</li>
                 <li>Sem fidelidade</li>
               </ul>
-              <footer>
-                <a href="./assine.html" class="botao">Assinar</a>
+              <footer class="plano__rodape">
+                <a href="./assine.html" class="botao botao--assinar">Assinar</a>
               </footer>
             </article>
           </div>
           <div class="col-md-4">
-            <article>
-              <h2>Plano Intermediário</h2>
-              <div>R$119,90/mês</div>
-              <ul>
+            <article class="plano">
+              <h2 class="plano__cabecalho">Plano Intermediário</h2>
+              <div class="plano__preco">R$119,90/mês</div>
+              <ul class="plano__caracteristicas">
                 <li>Até 20 <strong>usuários</strong></li>
                 <li>100GB de <strong> armazenamento</strong></li>
                 <li>Instalação Grátis</li>
                 <li>Fibra Ótica</li>
                 <li>Sem fidelidade</li>
               </ul>
-              <footer>
-                <a href="./assine.html" class="botao">Assinar</a>
+              <footer class="plano__rodape">
+                <a href="./assine.html" class="botao botao--assinar">Assinar</a>
               </footer>
             </article>
           </div>
-          <div class="col-md-4">
-            <article>
-              <h2>Plano Avançado</h2>
-              <div>R$199,90/mês</div>
-              <ul>
+          <div class="col-md-4 ultima-coluna">
+            <article class="plano">
+              <h2 class="plano__cabecalho">Plano Avançado</h2>
+              <div class="plano__preco">R$199,90/mês</div>
+              <ul class="plano__caracteristicas">
                 <li>Até 50 <strong>usuários</strong></li>
                 <li>1TB de <strong> armazenamento</strong></li>
                 <li>Instalação Grátis</li>
                 <li>Fibra Ótica</li>
                 <li>Sem fidelidade</li>
               </ul>
-              <footer>
-                <a href="./assine.html" class="botao">Assinar</a>
+              <footer class="plano__rodape">
+                <a href="./assine.html" class="botao botao--assinar">Assinar</a>
               </footer>
             </article>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="container">
+        <div class="layout-rodape">
+          <p>&copy; Serratec Residência - Curso de Programação 2025</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/componentes.css" />
+    <title>Cadastro de Clientes</title>
+  </head>
+  <body>
+    <div class="layout-assinatura">
+      <div class="container">
+        <div class="titulo-formulario">
+          <h1>Assinatura do Plano</h1>
+
+          <form action="#" method="post" class="form">
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <label for="nome" class="form-label">Nome:</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  class="form-control"
+                  placeholder="Digite seu nome"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <label for="email" class="form-label">Email:</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Digite seu email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4 col-md-4">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input
+                  type="text"
+                  id="telefone"
+                  name="telefone"
+                  class="form-control"
+                  placeholder="Digite seu telefone"
+                  required
+                />
+              </div>
+
+              <div class="col-sm-4 col-md-4">
+                <label for="dataNascimento" class="form-label"
+                  >Data Nasc.:</label
+                >
+                <input
+                  type="date"
+                  id="dataNascimento"
+                  name="dataNascimento"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="col-sm-4 col-md-4">
+                <label for="plano" class="form-label">Plano:</label>
+                <select id="plano" class="form-select">
+                  <option value="B">Básico</option>
+                  <option value="I">Intermediário</option>
+                  <option value="A">Avançado</option>
+                </select>
+              </div>
+            </div>
+            <br />
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../js/form.js"></script>
+  </body>
+</html>
